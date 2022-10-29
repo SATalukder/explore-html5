@@ -9,12 +9,18 @@
     <style>
         table {
             border-collapse: collapse;
+            background-color: aqua;
+
         }
 
         td,
         th {
-            border: 2px solid lightgray;
+            border: 1px solid lightgray;
             padding: 5px 10px;
+        }
+
+        tfoot td:nth-child(1) {
+            text-align: center;
         }
     </style>
 </head>
@@ -27,6 +33,8 @@
                 <th>Full Name</th>
                 <th>Position</th>
                 <th>Salary</th>
+                <th>Type</th>
+
             </tr>
 
         </thead>
@@ -36,6 +44,8 @@
                 <td>Bill Gates</td>
                 <td>Founder Microsoft</td>
                 <td>$1000</td>
+                <td rowspan="4">Company Founder</td>
+
             </tr>
             <tr>
                 <td>2</td>
@@ -56,6 +66,12 @@
                 <td>$1300</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expense: </td>
+                <td>$4600</td>
+            </tr>
+        </tfoot>
     </table>
 
 </body>
